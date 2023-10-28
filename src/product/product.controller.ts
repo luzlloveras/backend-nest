@@ -3,6 +3,7 @@ import { ProductService } from './product.service';
 
 @Controller('product')
 export class ProductController {
+  // inyección de dependencia
   constructor(private readonly productService: ProductService) {}
 
   @Get()
